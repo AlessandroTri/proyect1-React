@@ -1,0 +1,155 @@
+ .itemCont {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.Unidad {
+  width: 300px;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.Unidad:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.imagen {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.edit, .borrar {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.edit:hover {
+  transform: rotate(-45deg);
+}
+
+.borrar:hover {
+  transform: rotate(45deg);
+}
+
+h4 {
+  margin: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+}
+
+button {
+  display:flex;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0062cc;
+}
+ 
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+label {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.inputname, .inputcantidad {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+
+
+
+
+
+.modalContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal {
+  position: relative;
+  width: 500px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.modal_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.modal_header-title {
+  margin: 0;
+}
+
+.close {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.close img {
+  width: 20px;
+  height: 20px;
+}
+
+.modal_content {
+  margin-bottom: 20px;
+}
+
+.modal_footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal-close, .submit {
+  border: none;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.modal-close:hover, .submit:hover {
+  background-color: #0069d9;
+}
+
